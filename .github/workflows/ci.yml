@@ -1,0 +1,22 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test-and-coverage:
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+    - name: Setup go
+      uses: actions/setup-go@v3
+      with:
+        go-version-file: './go.mod'
+    - name: Test
+      run: make tests
+    - name: Build CLI app
+      run: make build_cli
+    - name: Upload coverage to Codecov (ubuntu-latest only)
+      if: matrix.os == 'ubuntu-latest'
+      uses: codecov/codecov-action@v3

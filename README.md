@@ -8,7 +8,7 @@
 
 ## Summary
 
-Package passwordsim lets you search for passwords similar to your specified password in any passwords dataset. The similarity metric used is the [Damerau-Levenshtein](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance) distance.
+**passwordsim** lets you search for passwords similar to your specified password in any passwords dataset. The similarity metric used is the [Damerau-Levenshtein](https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance) distance.
 
 ## Use cases
 

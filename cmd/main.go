@@ -40,7 +40,7 @@ func main() {
 
 	app := &cli.App{
 		Name: "passwordsim",
-		Description: `Package passwordsim lets you search for passwords similar to your specified password in any passwords dataset.
+		Description: `passwordsim lets you search for passwords similar to your specified password in any passwords dataset.
 The similarity metric used is the Damerau-Levenshtein distance.
 
 EXAMPLE (for UNIX systems): passwordsim -f 'test/passwords.txt' -o 'output.txt' -p 'correct horse battery staple' -t 0.3

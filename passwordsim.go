@@ -78,7 +78,8 @@ func CheckPasswords(passwords string, output string, passwordToCheck string, thr
 				score := t.Distance(password, passwordToCheck)
 				normalisedScore := float64(score) / float64(math.Max(float64(len(password)), float64(len(passwordToCheck))))
 				if normalisedScore <= threshold {
-					similarPasswords.Store(password, normalisedScore)
+					// Ensure each map key (password) is written to only once
+					similarPasswords.LoadOrStore(password, normalisedScore)
 				}
 			}
 		}()

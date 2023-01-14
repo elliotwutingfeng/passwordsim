@@ -10,6 +10,7 @@ import (
 	"os"
 	"runtime"
 	"sort"
+	"strconv"
 	"sync"
 
 	"github.com/fatih/color"
@@ -108,11 +109,11 @@ func CheckPasswords(passwords string, output string, passwordToCheck string, thr
 		passwordCount = "1 similar password found"
 		clr = color.New(color.Bold, color.FgRed)
 	} else {
-		passwordCount = fmt.Sprint(len(res)) + " similar passwords found"
+		passwordCount = strconv.Itoa(len(res)) + " similar passwords found"
 		clr = color.New(color.Bold, color.FgRed)
 	}
 	clr.Print(passwordCount + " in '" + passwords +
-		"'. Threshold: " + fmt.Sprintf("%.2f", threshold) + "\n")
+		"'. Threshold: " + strconv.FormatFloat(threshold, 'f', 2, 64) + "\n")
 	color.White("Results saved to file '%s'.\n", output)
 }
 

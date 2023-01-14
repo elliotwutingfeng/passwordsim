@@ -45,7 +45,7 @@ type result struct {
 // CPU-bound receivers are slower at calculating distances
 // than I/O sender at sending out passwords, so bufferSize
 // has to be high enough.
-const bufferSize = 16777216
+const bufferSize = 512
 
 // estimatedMaxPasswordLength sets an optimal initial size for package tdl's distance calculator
 // to reduce chances of having to resize (i.e. most passwords do not exceed 64 characters).

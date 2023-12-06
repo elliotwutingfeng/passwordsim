@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/fatih/color v1.16.0
 	github.com/lmas/Damerau-Levenshtein v1.0.0
-	github.com/urfave/cli/v2 v2.23.7
+	github.com/urfave/cli/v2 v2.26.0
 )
 
 require (

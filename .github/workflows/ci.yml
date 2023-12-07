@@ -10,7 +10,7 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v3
     - name: Setup go
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v5
       with:
         go-version-file: './go.mod'
     - name: Test

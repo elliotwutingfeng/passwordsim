@@ -18,6 +18,7 @@ jobs:
     - name: Build CLI app
       run: make build_cli
     - name: Convert Go coverage to lcov
+      if: matrix.os == 'ubuntu-latest'
       run: |
         go install github.com/jandelgado/gcov2lcov@latest
         gcov2lcov -infile=coverage.out -outfile=coverage.lcov

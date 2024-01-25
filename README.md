@@ -2,7 +2,7 @@
 
 [![Go Reference](https://img.shields.io/badge/go-reference-blue?logo=go&logoColor=white&style=for-the-badge)](https://pkg.go.dev/github.com/elliotwutingfeng/passwordsim)
 [![Go Report Card](https://goreportcard.com/badge/github.com/elliotwutingfeng/passwordsim?style=for-the-badge)](https://goreportcard.com/report/github.com/elliotwutingfeng/passwordsim)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/elliotwutingfeng/passwordsim?color=bright-green&logo=codecov&style=for-the-badge&token=1FMR3I0ZXO)](https://codecov.io/gh/elliotwutingfeng/passwordsim)
+[![Coveralls](https://img.shields.io/coverallsCoverage/github/elliotwutingfeng/passwordsim?logo=coveralls&style=for-the-badge)](https://coveralls.io/github/elliotwutingfeng/passwordsim?branch=main)
 
 [![GitHub license](https://img.shields.io/badge/LICENSE-BSD--3--CLAUSE-GREEN?style=for-the-badge)](LICENSE)
 

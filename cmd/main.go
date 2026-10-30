@@ -5,7 +5,7 @@ import (
 
 	"github.com/elliotwutingfeng/passwordsim"
 	"github.com/fatih/color"
-	"github.com/urfave/cli/v2"
+	"github.com/urfave/cli/v3"
 )
 
 type results []result
